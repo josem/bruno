@@ -1,0 +1,57 @@
+#!/usr/bin/env ruby
+require 'gli'
+require 'bruno'
+
+
+include GLI::App
+
+program_desc 'Convert your strings files from Android to iOS and viceversa'
+
+version Bruno::VERSION
+
+desc 'Converts Localizable.strings into strings.xml or viceversa'
+arg_name 'Input and output files (one in Localizable.strings and the other in strings.xml format)'
+command :convert do |c|
+
+  c.desc 'input file (Localizable.strings or strings.xml)'
+  c.arg_name 'input File'
+  c.flag [:in]
+
+  c.desc 'output file (Localizable.strings or strings.xml)'
+  c.arg_name 'output File'
+  c.flag [:out]
+  
+  c.action do |global_options, options, args|    
+    raise 'You must provide an input file' if options[:in].nil?
+    raise 'You must provide an output file' if options[:out].nil?
+    # Your command logic here
+     
+    # If you have any errors, just raise them
+    #raise "that command made no sense"
+
+    puts "convert command ran"
+  end
+end
+
+pre do |global,command,options,args|
+  # Pre logic here
+  # Return true to proceed; false to abort and not call the
+  # chosen command
+  # Use skips_pre before a command to skip this block
+  # on that command only
+  true
+end
+
+post do |global,command,options,args|
+  # Post logic here
+  # Use skips_post before a command to skip this
+  # block on that command only
+end
+
+on_error do |exception|
+  # Error logic here
+  # return false to skip default error handling
+  true
+end
+
+exit run(ARGV)
