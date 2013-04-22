@@ -2,7 +2,6 @@
 require 'gli'
 require 'bruno'
 
-
 include GLI::App
 
 program_desc 'Convert your strings files from Android to iOS and viceversa'
@@ -20,15 +19,16 @@ command :convert do |c|
   c.desc 'output file (Localizable.strings or strings.xml)'
   c.arg_name 'output File'
   c.flag [:out]
-  
-  c.action do |global_options, options, args|    
+
+  c.action do |global_options, options, args|
     raise 'You must provide an input file' if options[:in].nil?
     raise 'You must provide an output file' if options[:out].nil?
     # Your command logic here
-     
+
     # If you have any errors, just raise them
     #raise "that command made no sense"
 
+    Bruno::print_some('asdasdas')
     puts "convert command ran"
   end
 end

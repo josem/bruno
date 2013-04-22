@@ -1,23 +1,9 @@
-require 'rake/clean'
-require 'rubygems'
-require 'rubygems/package_task'
-require 'rdoc/task'
+require 'rake'
+require 'rspec/core/rake_task'
 
-
-
-spec = eval(File.read('bruno.gemspec'))
-
-Gem::PackageTask.new(spec) do |pkg|
-end
-CUKE_RESULTS = 'results.html'
-CLEAN << CUKE_RESULTS
-
-
-
-require 'rake/testtask'
-Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList['test/*_test.rb']
+desc "Run RSpec"
+RSpec::Core::RakeTask.new do |t|
+    t.verbose = false
 end
 
-task :default => [:test]
+task :default => [:spec]

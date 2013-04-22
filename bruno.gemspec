@@ -1,6 +1,9 @@
-require File.join([File.dirname(__FILE__),'lib','bruno','version.rb'])
+# encoding:utf-8
+$:.push File.expand_path("../lib", __FILE__)
 
-spec = Gem::Specification.new do |s| 
+require 'bruno/version'
+
+spec = Gem::Specification.new do |s|
   s.name        = 'bruno'
   s.version     = Bruno::VERSION
   s.author      = 'José M. Gilgado'
@@ -10,9 +13,10 @@ spec = Gem::Specification.new do |s|
   s.summary     = "Convert your i18n files between Android and iOS"
   s.description = 'Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.'
   s.files = %w(
-bin/bruno
-lib/bruno/version.rb
-lib/bruno.rb
+    bin/bruno
+    lib/bruno/version.rb
+    lib/bruno/main.rb
+    lib/bruno.rb
   )
   s.require_paths << 'lib'
   #s.has_rdoc = true
@@ -23,5 +27,6 @@ lib/bruno.rb
   s.add_development_dependency('rake')
   s.add_development_dependency('rdoc')
   s.add_development_dependency('aruba')
+  s.add_development_dependency('rspec')
   s.add_runtime_dependency('gli','2.5.4')
 end
