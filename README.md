@@ -1,3 +1,5 @@
+Work in progress, in a few weeks I'll release the first version
+
 # Bruno
 Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa. 
 
