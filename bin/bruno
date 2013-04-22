@@ -28,7 +28,7 @@ command :convert do |c|
     # If you have any errors, just raise them
     #raise "that command made no sense"
 
-    Bruno::print_some('asdasdas')
+    # Bruno::__('asdasdas')
     puts "convert command ran"
   end
 end
