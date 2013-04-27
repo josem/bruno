@@ -1,0 +1,13 @@
+/*
+  Localizable.strings
+*/
+
+"BACK_TEXT" = "Back";
+
+// Home
+"HOME_ROUTES" = "Routes";
+"HOME_SIGNUP" = "Sign Up";
+"BACK_BUTTON" = "Go Back";
+
+// Errors
+"ERROR_USERNAME" = "Username is not valid";

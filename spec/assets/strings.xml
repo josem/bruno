@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test App</string>
+    <string name="title_activity_main">Test</string>
+
+    <!-- Information -->
+    <string name="info_title">Information</string>
+    <string name="info_subtitle">More information</string>
+</resources>
