@@ -15,6 +15,7 @@ spec = Gem::Specification.new do |s|
   s.files = %w(
     bin/bruno
     lib/bruno/version.rb
+    lib/bruno/file.rb
     lib/bruno/main.rb
     lib/bruno.rb
   )

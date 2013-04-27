@@ -1,1 +1,1 @@
-require File.dirname(__FILE__) + '/../lib/bruno'
+require 'bruno'

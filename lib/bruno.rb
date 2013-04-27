@@ -1,4 +1,5 @@
 require 'bruno/version'
+require 'bruno/file'
 require 'bruno/main'
 
 # Add requires for other files you add to your project here, so
