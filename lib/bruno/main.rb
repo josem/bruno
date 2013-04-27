@@ -1,11 +1,9 @@
 module Bruno
-  def self.is_ios?(file_path)
-    content = File.read(file_path)
-    !(content =~ /".*" = ".*";/).nil?
+  def self.is_ios?(file_content)
+    !(file_content =~ /".*" = ".*";/).nil?
   end
 
-  def self.is_android?(file_path)
-    content = File.read(file_path)
-    !(content =~ /<string name=".*">.*<\/string>/).nil?
+  def self.is_android?(file_content)
+    !(file_content =~ /<string name=".*">.*<\/string>/).nil?
   end
 end
