@@ -1,5 +1,5 @@
 module Bruno
-  class File
+  class StringsFile
     def initialize(file_path)
       if File.readable?(file_path)
         @content = File.read(file_path)
@@ -17,7 +17,9 @@ module Bruno
     end
 
     def to_ios
+      ios_content = ''
 
+      ios_content
     end
   end
 end
