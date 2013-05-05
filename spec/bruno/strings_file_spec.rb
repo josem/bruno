@@ -9,7 +9,7 @@ describe Bruno::StringsFile do
 
   describe 'to_ios' do
     it 'is empty if the content of the original file is empty' do
-      file = Bruno::StringsFile.new('assets/strings.xml')
+      file = Bruno::StringsFile.new('strings.xml')
     end
   end
 end
