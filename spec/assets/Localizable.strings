@@ -1,13 +1,4 @@
-/*
-  Localizable.strings
-*/
-
-"BACK_TEXT" = "Back";
-
-// Home
-"HOME_ROUTES" = "Routes";
-"HOME_SIGNUP" = "Sign Up";
-"BACK_BUTTON" = "Go Back";
-
-// Errors
-"ERROR_USERNAME" = "Username is not valid";
+"APP_NAME" = "Test App";
+"TITLE_ACTIVITY_MAIN" = "Test";
+"INFO_TITLE" = "Information";
+"INFO_SUBTITLE" = "More information";
