@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 module Bruno
   class StringsFile
     def initialize(file_path)
@@ -17,9 +19,19 @@ module Bruno
     end
 
     def to_ios
-      ios_content = ''
+      return '' if @content == ''
+      strings = get_strings_from_android
+    end
 
-      ios_content
+    private
+    def get_strings_from_android
+      strings = []
+      xml = Nokogiri::XML(@content)
+      xml.root.xpath('string').each do |string|
+        strings << {:key => string.attribute('name').value, :value => string.content}
+      end
+
+      strings
     end
   end
 end
