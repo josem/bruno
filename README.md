@@ -25,6 +25,7 @@ Bruno will detect automatically the format for you, so the name of the file does
 
 ## In future releases
 * Support for comments
+* Handle invalid formats of files
 * Travis
 
 ## Development
