@@ -1,7 +1,7 @@
 Work in progress, in a few weeks I'll release the first version
 
-# Bruno
-Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa. 
+# Bruno [![Code Climate](https://codeclimate.com/github/josem/bruno.png)](https://codeclimate.com/github/josem/bruno)
+Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.
 
 ## Installation
 To install Bruno:
@@ -25,7 +25,7 @@ Bruno will detect automatically the format for you, so the name of the file does
 
 ## In future releases
 * Support for comments
-* Travis and CodeClimate
+* Travis
 
 ## Development
 Fork the project and install all the dependencies with:
