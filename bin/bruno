@@ -9,9 +9,7 @@ program_desc 'Convert your strings files from Android to iOS and viceversa'
 version Bruno::VERSION
 
 desc 'Converts Localizable.strings into strings.xml or viceversa'
-arg_name 'Input and output files (one in Localizable.strings and the other in strings.xml format)'
 command :convert do |c|
-
   c.desc 'input file (Localizable.strings or strings.xml)'
   c.arg_name 'input File'
   c.flag [:in]
@@ -23,12 +21,12 @@ command :convert do |c|
   c.action do |global_options, options, args|
     raise 'You must provide an input file' if options[:in].nil?
     raise 'You must provide an output file' if options[:out].nil?
-    # Your command logic here
 
     # If you have any errors, just raise them
     #raise "that command made no sense"
 
-    # Bruno::__('asdasdas')
+    strings_file = Bruno::StringsFile.new(options[:in])
+    strings_file.transform(options[:out])
     puts "convert command ran"
   end
 end

@@ -3,6 +3,7 @@ PATH
   specs:
     bruno (0.0.1)
       gli (= 2.5.4)
+      nokogiri (= 1.5.9)
 
 GEM
   remote: http://rubygems.org/
@@ -25,6 +26,7 @@ GEM
       json (>= 1.7.6)
     gli (2.5.4)
     json (1.7.6)
+    nokogiri (1.5.9)
     rake (10.0.3)
     rdoc (3.12.1)
       json (~> 1.4)
