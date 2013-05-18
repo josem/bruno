@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Bruno::StringsFile do
   let (:android_path) { File.expand_path(File.join('spec','assets','strings.xml')) }
-  let (:ios_path) { File.expand_path(File.join('spec','assets','localizable.strings')) }
+  let (:ios_path) { File.expand_path(File.join('spec','assets','Localizable.strings')) }
   let (:array_hashes) {[{:key=>"APP_NAME", :value=>"Test App"},
                         {:key=>"TITLE_ACTIVITY_MAIN", :value=>"Test"},
                         {:key=>"INFO_TITLE", :value=>"Information"},
