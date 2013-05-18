@@ -23,6 +23,20 @@ bruno convert --in strings.xml --out Localizable.strings
 
 Bruno will detect automatically the format for you, so the name of the file does not matter.
 
+## In future releases
+* Support for comments
+* Travis and CodeClimate
+
+## Development
+Fork the project and install all the dependencies with:
+```bash
+bundle
+```
+
+To run the tests:
+```bash
+rake
+```
 
 ## Author
 José M. Gilgado
