@@ -36,6 +36,14 @@ To run the tests:
 rake
 ```
 
+## Compatibility
+* Ruby 1.9.3
+* Ruby 1.8.7
+* JRuby 1.8 Mode
+* JRuby 1.9 Mode
+* Rubinius 1.8 Mode
+* Rubinius 1.9 Mode
+
 ## Author
 José M. Gilgado
 
