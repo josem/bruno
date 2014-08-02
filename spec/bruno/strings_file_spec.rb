@@ -19,12 +19,12 @@ describe Bruno::StringsFile do
 
   describe '#transform' do
     it 'selects #to_ios if it is an Android file' do
-      android_file.should_receive('to_ios').once
+      expect(android_file).to receive('to_ios').once
       android_file.transform('/tmp/Localizable.strings')
     end
 
     it 'selects #to_android if it is an iOS file' do
-      ios_file.should_receive('to_android').once
+      expect(ios_file).to receive('to_android').once
       ios_file.transform('/tmp/strings.xml')
     end
   end
@@ -72,21 +72,21 @@ describe Bruno::StringsFile do
 
   describe '#is_ios?' do
     it 'true when the file is an iOS Localizable file' do
-      expect(ios_file.is_ios?).to be_true
+      expect(ios_file.is_ios?).to be true
     end
 
     it 'false when is not an iOS Localizable file' do
-      expect(android_file.is_ios?).to be_false
+      expect(android_file.is_ios?).to be false
     end
   end
 
   describe '#is_android?' do
     it 'true when the file has strings in XML (Android)' do
-      expect(android_file.is_android?).to be_true
+      expect(android_file.is_android?).to be true
     end
 
     it 'false when the file has not strings in XML (not Android)' do
-      expect(ios_file.is_android?).to be_false
+      expect(ios_file.is_android?).to be false
     end
   end
 end
