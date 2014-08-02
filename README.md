@@ -1,4 +1,4 @@
-# Bruno [![Build Status](https://travis-ci.org/josem/bruno.png?branch=master)](https://travis-ci.org/josem/bruno) [![Code Climate](https://codeclimate.com/github/josem/bruno.png)](https://codeclimate.com/github/josem/bruno)
+# Bruno [![Build Status](https://travis-ci.org/josem/bruno.png?branch=master)](https://travis-ci.org/josem/bruno) [![Code Climate](https://codeclimate.com/github/josem/bruno.png)](https://codeclimate.com/github/josem/bruno) [![Gem Version](https://badge.fury.io/rb/bruno.svg)](http://badge.fury.io/rb/bruno)
 Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.
 
 ## Installation
@@ -25,6 +25,21 @@ Bruno will detect automatically the format for you, so the name of the file does
 * Support for comments
 * Handle invalid formats of files
 
+## Compatibility
+* Ruby 1.9.3
+* Ruby 1.8.7
+* JRuby 1.8 Mode
+* JRuby 1.9 Mode
+* Rubinius 1.8 Mode
+* Rubinius 1.9 Mode
+
+## Changelog
+### 0.0.2 August 2, 2014
+Improved code, nothing changes in the interface
+### 0.0.1 May 18, 2013
+First release
+
+
 ## Development
 Fork the project and install all the dependencies with:
 ```bash
@@ -35,14 +50,6 @@ To run the tests:
 ```bash
 rake
 ```
-
-## Compatibility
-* Ruby 1.9.3
-* Ruby 1.8.7
-* JRuby 1.8 Mode
-* JRuby 1.9 Mode
-* Rubinius 1.8 Mode
-* Rubinius 1.9 Mode
 
 ## Author
 José M. Gilgado
