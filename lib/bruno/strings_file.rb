@@ -19,11 +19,11 @@ module Bruno
     end
 
     def is_ios?
-      Bruno.is_ios?(@content)
+      !(@content =~ /".*" = ".*";/).nil?
     end
 
     def is_android?
-      Bruno.is_android?(@content)
+      !(@content =~ /<string name=".*">.*<\/string>/).nil?
     end
 
     def to_ios(ios_file_path)

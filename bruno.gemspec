@@ -16,7 +16,6 @@ spec = Gem::Specification.new do |s|
     bin/bruno
     lib/bruno/version.rb
     lib/bruno/strings_file.rb
-    lib/bruno/main.rb
     lib/bruno.rb
   )
   s.require_paths << 'lib'
