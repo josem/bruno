@@ -72,21 +72,21 @@ describe Bruno::StringsFile do
 
   describe '#is_ios?' do
     it 'true when the file is an iOS Localizable file' do
-      expect(ios_file.is_ios?).to be true
+      expect(ios_file.send(:is_ios?)).to be true
     end
 
     it 'false when is not an iOS Localizable file' do
-      expect(android_file.is_ios?).to be false
+      expect(android_file.send(:is_ios?)).to be false
     end
   end
 
   describe '#is_android?' do
     it 'true when the file has strings in XML (Android)' do
-      expect(android_file.is_android?).to be true
+      expect(android_file.send(:is_android?)).to be true
     end
 
     it 'false when the file has not strings in XML (not Android)' do
-      expect(ios_file.is_android?).to be false
+      expect(ios_file.send(:is_android?)).to be false
     end
   end
 end
