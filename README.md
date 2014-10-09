@@ -25,7 +25,9 @@ Bruno will detect automatically the format for you, so the name of the file does
 * Support for comments
 * Handle invalid formats of files
 
-## Compatibility
+## Tested Compatibility
+* Ruby 2.1.2
+* Ruby 2.0.0
 * Ruby 1.9.3
 * Ruby 1.8.7
 * JRuby 1.8 Mode
