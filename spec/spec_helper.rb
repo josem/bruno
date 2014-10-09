@@ -1,1 +1,2 @@
 require 'bruno'
+require 'tempfile'

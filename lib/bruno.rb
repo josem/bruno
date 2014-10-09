@@ -1,5 +1,5 @@
 require 'bruno/version'
-require 'bruno/strings_file'
-
-# Add requires for other files you add to your project here, so
-# you just need to require this one file in your bin file
+require 'bruno/i18n_file'
+require 'bruno/android_file'
+require 'bruno/ios_file'
+require 'bruno/converter'

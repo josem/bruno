@@ -22,11 +22,8 @@ command :convert do |c|
     raise 'You must provide an input file' if options[:in].nil?
     raise 'You must provide an output file' if options[:out].nil?
 
-    # If you have any errors, just raise them
-    #raise "that command made no sense"
+    Bruno::Converter.convert(options[:in], options[:out])
 
-    strings_file = Bruno::StringsFile.new(options[:in])
-    strings_file.transform(options[:out])
     puts "convert command ran"
   end
 end

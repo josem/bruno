@@ -15,8 +15,7 @@ spec = Gem::Specification.new do |s|
   s.description = 'Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.'
   s.files = %w(
     bin/bruno
-    lib/bruno/version.rb
-    lib/bruno/strings_file.rb
+    lib/bruno/*
     lib/bruno.rb
   )
   s.require_paths << 'lib'
