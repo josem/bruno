@@ -35,7 +35,7 @@ Bruno will detect automatically the format for you, so the name of the file does
 
 ## Changelog
 ### 0.0.2 August 2, 2014
-Improved code, nothing changes in the interface
+Improved code, fixed some minor mistakes
 ### 0.0.1 May 18, 2013
 First release
 
