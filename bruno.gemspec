@@ -2,8 +2,6 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "bruno/version"
-require 'rake'
-
 
 Gem::Specification.new do |spec|
   spec.name        = 'bruno'
@@ -15,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license     = 'MIT'
   spec.summary     = "Convert your i18n files between Android and iOS"
   spec.description = 'Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.'
-  spec.files = FileList['bin/bruno', 'lib/bruno/*','lib/bruno.rb'].to_a
+  spec.files = Dir['bin/'] + Dir['lib/**/*'] + Dir['README.md']
   spec.require_paths = ['lib']
   spec.bindir = 'bin'
   spec.executables << 'bruno'
