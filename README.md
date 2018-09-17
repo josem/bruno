@@ -27,15 +27,10 @@ Bruno will detect automatically the format for you, so the name of the file does
 
 ## Tested Compatibility
 * Ruby 2.1.2
-* Ruby 2.0.0
-* Ruby 1.9.3
-* Ruby 1.8.7
-* JRuby 1.8 Mode
-* JRuby 1.9 Mode
-* Rubinius 1.8 Mode
-* Rubinius 1.9 Mode
 
 ## Changelog
+### 0.0.3 September 13, 2014
+Updated dependencies
 ### 0.0.2 August 2, 2014
 Improved code, fixed some minor mistakes
 ### 0.0.1 May 18, 2013

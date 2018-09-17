@@ -27,5 +27,5 @@ spec = Gem::Specification.new do |s|
   s.add_development_dependency('rake', '~> 10.3', '>= 10.3.2')
   s.add_development_dependency('rspec', '~> 3.0', '>= 3.0.0')
   s.add_runtime_dependency('gli','2.5.4')
-  s.add_runtime_dependency('nokogiri','1.5.9')
+  s.add_runtime_dependency('nokogiri','1.8.4')
 end
