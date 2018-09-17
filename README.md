@@ -26,7 +26,11 @@ Bruno will detect automatically the format for you, so the name of the file does
 * Handle invalid formats of files
 
 ## Tested Compatibility
-* Ruby 2.1.2
+It should work with any Ruby 2.X version but Travis is testing:
+* 2.5.1
+* 2.4.4
+* 2.3.7
+* 2.1.2
 
 ## Changelog
 ### 0.0.4 September 17, 2018
