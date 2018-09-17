@@ -7,19 +7,27 @@ module Bruno
     end
 
     def self.read(path)
-      if File.readable?(path)
-        content = File.read(path)
-
-        if IOSFile.is_ios?(content)
-          return AndroidFile.new(IOSFile.read(content))
-        elsif AndroidFile.is_android?(content)
-          return IOSFile.new(AndroidFile.read(content))
-        else
-          raise 'Format of the file is not correct'
-        end
-      else
+      if !File.readable?(path)
         raise 'File is not readable'
       end
+
+      content = File.read(path)
+
+      if is_ios?(content)
+        AndroidFile.new(IOSFile.read(content))
+      elsif is_android?(content)
+        IOSFile.new(AndroidFile.read(content))
+      else
+        raise 'Format of the file is not correct'
+      end
+    end
+
+    def self.is_android?(content)
+      !(content =~ /<string name=".*">.*<\/string>/).nil?
+    end
+
+    def self.is_ios?(content)
+      !(content =~ /".*" = ".*";/).nil?
     end
   end
 end

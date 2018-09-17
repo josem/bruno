@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe Bruno::IOSFile do
-  let(:android_path) { File.expand_path(File.join('spec','assets','strings.xml')) }
-  let(:android_content) { File.read(android_path) }
-
   let(:ios_path) { File.expand_path(File.join('spec','assets','Localizable.strings')) }
   let(:ios_content) { File.read(ios_path) }
 
@@ -11,17 +8,6 @@ describe Bruno::IOSFile do
                       {:key=>"TITLE_ACTIVITY_MAIN", :value=>"Test"},
                       {:key=>"INFO_TITLE", :value=>"Information"},
                       {:key=>"INFO_SUBTITLE", :value=>"More information"}] }
-
-
-  describe '#self.is_ios?' do
-    it 'is true when the content is in iOS format' do
-      expect(described_class.is_ios?(ios_content)).to be true
-    end
-
-    it 'is false when the content is not in iOS format' do
-      expect(described_class.is_ios?(android_content)).to be false
-    end
-  end
 
   describe '#self.read' do
     it 'returns array of hashes with keys and values' do

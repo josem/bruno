@@ -1,8 +1,4 @@
 class Bruno::IOSFile < Bruno::I18nFile
-  def self.is_ios?(content)
-    !(content =~ /".*" = ".*";/).nil?
-  end
-  
   def self.read(content)
     strings = []
     content.each_line do |line|

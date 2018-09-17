@@ -1,10 +1,6 @@
 require 'nokogiri'
 
 class Bruno::AndroidFile < Bruno::I18nFile
-  def self.is_android?(content)
-    !(content =~ /<string name=".*">.*<\/string>/).nil?
-  end
-
   def self.read(content)
     strings = []
     xml = Nokogiri::XML(content)

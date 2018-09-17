@@ -29,6 +29,8 @@ Bruno will detect automatically the format for you, so the name of the file does
 * Ruby 2.1.2
 
 ## Changelog
+### 0.0.4 September 17, 2018
+Internal refactoring for cleaner code
 ### 0.0.3 September 17, 2018
 Updated dependencies
 ### 0.0.2 August 2, 2014
