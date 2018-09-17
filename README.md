@@ -33,6 +33,8 @@ It should work with any Ruby 2.X version but Travis is testing:
 * 2.1.2
 
 ## Changelog
+### 0.0.5 September 17, 2018
+Simplified gemspec
 ### 0.0.4 September 17, 2018
 Internal refactoring for cleaner code
 ### 0.0.3 September 17, 2018
