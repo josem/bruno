@@ -1,31 +1,34 @@
-# encoding:utf-8
-$:.push File.expand_path("../lib", __FILE__)
 
-require 'bruno/version'
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "bruno/version"
+require 'rake'
 
-spec = Gem::Specification.new do |s|
-  s.name        = 'bruno'
-  s.version     = Bruno::VERSION
-  s.author      = 'José M. Gilgado'
-  s.email       = 'jm.gilgado@gmail.com'
-  s.homepage    = 'http://github.com/josem/bruno'
-  s.platform    = Gem::Platform::RUBY
-  s.licenses    = ['MIT']
-  s.summary     = "Convert your i18n files between Android and iOS"
-  s.description = 'Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.'
-  s.files = %w(
-    bin/bruno
-    lib/bruno/*
-    lib/bruno.rb
-  )
-  s.require_paths << 'lib'
-  #s.has_rdoc = true
-  #s.extra_rdoc_files = ['README.rdoc','bruno.rdoc']
-  #s.rdoc_options << '--title' << 'bruno' << '--main' << 'README.rdoc' << '-ri'
-  s.bindir = 'bin'
-  s.executables << 'bruno'
-  s.add_development_dependency('rake', '~> 10.3', '>= 10.3.2')
-  s.add_development_dependency('rspec', '~> 3.0', '>= 3.0.0')
-  s.add_runtime_dependency('gli','2.5.4')
-  s.add_runtime_dependency('nokogiri','1.8.4')
+
+Gem::Specification.new do |spec|
+  spec.name        = 'bruno'
+  spec.version     = Bruno::VERSION
+  spec.author      = 'José M. Gilgado'
+  spec.email       = 'jm.gilgado@gmail.com'
+  spec.homepage    = 'https://github.com/josem/bruno'
+  spec.platform    = Gem::Platform::RUBY
+  spec.license     = 'MIT'
+  spec.summary     = "Convert your i18n files between Android and iOS"
+  spec.description = 'Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and viceversa.'
+  spec.files = FileList['bin/bruno', 'lib/bruno/*','lib/bruno.rb'].to_a
+  spec.require_paths = ['lib']
+  spec.bindir = 'bin'
+  spec.executables << 'bruno'
+  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "rake", "~> 12.3.0"
+  spec.add_development_dependency 'rspec', '~> 3.8'
+  spec.add_runtime_dependency 'gli','2.5.4'
+  spec.add_runtime_dependency 'nokogiri','1.8.4'
+
+  if spec.respond_to?(:metadata)
+    spec.metadata["allowed_push_host"] = 'http://mygemserver.com'
+  else
+    raise "RubyGems 2.0 or newer is required to protect against " \
+      "public gem pushes."
+  end
 end

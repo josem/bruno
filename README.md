@@ -51,5 +51,5 @@ rake
 ## Author
 José M. Gilgado
 
-##License
+## License
 MIT License
