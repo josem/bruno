@@ -48,6 +48,11 @@ To run the tests:
 rake
 ```
 
+To see available tasks:
+```bash
+bundle exec rake -T
+```
+
 ## Author
 José M. Gilgado
 
