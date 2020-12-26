@@ -1,5 +1,9 @@
+## ⚠️ This project is not maintained anymore so please, use [attranslate](https://github.com/fkirc/attranslate) instead. ⚠️
+
 # Bruno [![Build Status](https://travis-ci.org/josem/bruno.png?branch=master)](https://travis-ci.org/josem/bruno) [![Code Climate](https://codeclimate.com/github/josem/bruno.png)](https://codeclimate.com/github/josem/bruno) [![Gem Version](https://badge.fury.io/rb/bruno.svg)](http://badge.fury.io/rb/bruno)
 Bruno is a small tool to convert your Localizable.strings (iOS) files into strings.xml (Android) and vice versa.
+
+
 
 ## Installation
 To install Bruno:
