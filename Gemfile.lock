@@ -13,7 +13,7 @@ GEM
     mini_portile2 (2.3.0)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    rake (12.3.1)
+    rake (13.0.3)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -34,7 +34,7 @@ PLATFORMS
 DEPENDENCIES
   bruno!
   bundler (~> 1.16)
-  rake (~> 12.3.0)
+  rake (~> 13.0.3)
   rspec (~> 3.8)
 
 BUNDLED WITH
