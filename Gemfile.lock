@@ -3,16 +3,18 @@ PATH
   specs:
     bruno (0.0.5)
       gli (= 2.5.4)
-      nokogiri (= 1.8.4)
+      nokogiri (= 1.14.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.3)
     gli (2.5.4)
-    mini_portile2 (2.3.0)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
+    mini_portile2 (2.8.1)
+    nokogiri (1.14.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    racc (1.6.2)
     rake (13.0.3)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
